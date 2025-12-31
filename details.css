@@ -53,8 +53,13 @@
         /* width: 4rem; */
         width: 3.25rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 3.25rem;
+        height: 100%;
+        object-fit: contain;
     }
 
     /* ..............................................................................................................FIRST DETAILS SECTION */
@@ -563,8 +568,13 @@
         /* width: 4rem; */
         width: 3.25rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 3.25rem;
+        height: 100%;
+        object-fit: contain;
     }
 
     /* ..............................................................................................................FIRST DETAILS SECTION */
@@ -1064,8 +1074,13 @@
         /* width: 4rem; */
         width: 4rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 4rem;
+        /* height: 100%; */
+        object-fit: contain;
     }
 
     /* ..............................................................................................................FIRST DETAILS SECTION */
@@ -1553,8 +1568,13 @@
         /* width: 4rem; */
         width: 4.5rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 4.5rem;
+        /* height: 100%; */
+        object-fit: contain;
     }
 
     /* ..............................................................................................................FIRST DETAILS SECTION */
