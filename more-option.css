@@ -12,7 +12,1642 @@
     }
     /* @font-face {
         font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') forma@media screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
         src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 1.25rem;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        width: fit-content;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 3.25rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 3.25rem;
+        height: 100%;
+        /* background-color: black; */
+        /* float: left; */
+    }
+    .home-image {
+        width: 3.25rem;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* .....................................................................................................................BANNER SECTION */
+    .carousel {
+        position: relative;
+        height: 50vh;
+        /* width: 100%; */
+        padding-top: 10.375rem;
+        background-size: cover;
+        color: white;
+        border-radius: 0 0 0.625rem 0.625rem;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+        /* border: 1px solid green; */
+    }
+
+    /* .......................................................................................................................OPTIONS SECTION */
+    #options {
+        position: relative;
+        top: -25rem;
+        z-index: 9;
+        /* height: 20px; */
+        padding: 1rem;
+        background-color: #F0F0F0;
+        border-radius: 1.563rem 1.563rem 0 0;
+        /* border: 1px solid black; */
+    }
+    .options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* border: 1px solid green; */
+        gap: 2%;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ............DROPDOWN SECTION */
+    .dropdown {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* flex-direction: row; */
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 90%;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    input {
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* flex-direction: row; */
+        border: none;
+        cursor: pointer;
+        width: 90%;
+        /* height: 20%; */
+        font-size: 0.9rem;
+        padding: 0.7rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    /* .............................................................END OF DROPDOWN SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #button {
+        padding: 0.7rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    #button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    /* ..........................................OVERFLOW SECTION     */
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        margin-top: 1.5rem;
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 13.375rem;
+        height: 18.296rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 13.375rem;
+        height: 7.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.061rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.11rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .icon {
+        font-size: 1.25rem
+    }
+    .px-16 {
+        font-size: 1rem;
+        font-weight: 70;
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .link {
+        text-decoration: none;
+    }
+    .details-button {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 1.125rem 0;
+        border-radius: 3.313rem;
+        border: 0.5px solid black;
+    }
+    .details-button:hover {
+        background-color: black;
+        color: white;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+
+    /* ........................................................................................................................FOOTER SECTION */
+    #footer {
+        position: relative;
+        top: -25rem;
+        z-index: 9;
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 2rem 2rem;
+        height: 8.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+    }
+    #text {
+        font-size: 1rem;
+    }
+    .media {
+        width: 16.188rem;
+        height: 2.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 2.5rem;
+        height: 2.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.713rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 2rem;
+        margin-bottom: 2rem;
+        font-size: 0.7rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 1rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    #socials {
+        font-size: 1rem;
+    }
+    #text {
+        font-size: 0.8rem;
+    }
+    .details-button {
+        padding: 1rem 0;
+    }
+    .media {
+        width: 13.188rem;
+        /* border: 1px solid green; */
+    }
+    .media-logo {
+        width: 1.875rem;
+        height: 1.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.513rem;
+    }
+    #website-info {
+        margin: 0 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    
+}
+
+@media screen and (min-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 1.25rem;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        width: fit-content;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 3.25rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 3.25rem;
+        height: 100%;
+        /* background-color: black; */
+        /* float: left; */
+    }
+    .home-image {
+        width: 3.25rem;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* .....................................................................................................................BANNER SECTION */
+    .carousel {
+        position: relative;
+        height: 50vh;
+        /* width: 100%; */
+        padding-top: 8.375rem;
+        background-size: cover;
+        color: white;
+        border-radius: 0 0 0.625rem 0.625rem;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+        border: 1px solid black;
+    }
+
+    /* .......................................................................................................................OPTIONS SECTION */
+    #options {
+        position: relative;
+        top: -20rem;
+        z-index: 9;
+        /* height: 20px; */
+        padding: 1rem;
+        background-color: #F0F0F0;
+        border-radius: 1.563rem 1.563rem 0 0;
+        border: 1px solid black;
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid green; */
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ....................................................DROPDOWN SECTION */
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+
+        /* ...............................DROPDOWN ICON */
+        background-image:url('image/Car-Images/arrow-1.svg');
+        background-repeat:no-repeat;
+        background-position:right 0.1rem center;
+        /* ...............................DROPDOWN ICON END */
+
+        border: none;
+        cursor: pointer;
+        width: 6.3rem;
+        font-size: 0.8rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .dropdown-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+
+        border: none;
+        cursor: pointer;
+        width: 6.5rem;
+        font-size: 0.8rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    select {
+        appearance: none;          /* Removes default browser styling */
+        -webkit-appearance: none;  /* For Safari/Chrome */
+        -moz-appearance: none;     /* For Firefox */
+        background: none;          /* Remove background, including arrow */
+        background-image: none;    /* Extra precaution */
+    }
+    
+    /* ....................................................END OF DROPDOWN SECTION */
+
+    #button {
+        padding: 0.7rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    #button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+
+
+
+
+
+
+    /* ..............................................................OVERFLOW SECTION     */
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        margin-top: 1rem;
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15.375rem;
+        height: 20.296rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 15.375rem;
+        height: 9.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.461rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.21rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .fas {
+        font-size: 1.2rem;
+    }
+    .icon {
+        font-size: 1.2rem
+    }
+    .px-16 {
+        font-size: 0.9rem;
+        /* font-weight: 70; */
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .fonts {
+        font-size: 1.8rem;
+    }
+    .link {
+        text-decoration: none;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+
+    /* ........................................................................................................................FOOTER SECTION */
+    #footer {
+        position: relative;
+        top: -20rem;
+        z-index: 9;
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 5rem 2rem;
+        height: 8.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+    #text {
+        font-size: 1.25rem;
+    }
+    .media {
+        width: 16.188rem;
+        height: 2.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 2.5rem;
+        height: 2.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.713rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 3rem;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 3rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .margin {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        width: fit-content;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 4rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 4rem;
+        height: 100%;
+        /* background-color: black; */
+        /* float: left; */
+    }
+    .home-image {
+        width: 4rem;
+        /* height: 100%; */
+        object-fit: contain;
+    }
+
+    /* .....................................................................................................................BANNER SECTION */
+    #banner {
+        /* width: 100%; */
+        /* height: 25rem; */
+        height: 38.125rem;
+        background-image: url(image/car-2158284_1280.png);
+        background-size: cover;
+        border-radius: 0 0 0.625rem 0.625rem;
+        /* padding-top: 10.375rem; */
+        border: 1px solid green;
+    }
+
+    /* .......................................................................................................................OPTIONS SECTION */
+    #options {
+        position: relative;
+        top: -22rem;
+        z-index: 9;
+        /* height: 20px; */
+        padding: 1rem;
+        background-color: #F0F0F0;
+        border-radius: 1.563rem 1.563rem 0 0;
+        border: 1px solid black;
+    }
+    #option-filter {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid green; */
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* ....................................................DROPDOWN SECTION */
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+
+        /* ...............................DROPDOWN ICON */
+        background-image:url('image/Car-Images/arrow-1.svg');
+        background-repeat:no-repeat;
+        background-position:right 0.1rem center;
+        /* ...............................DROPDOWN ICON END */
+
+        border: none;
+        cursor: pointer;
+        width: 6.3rem;
+        font-size: 0.8rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .dropdown-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+
+        border: none;
+        cursor: pointer;
+        width: 6.5rem;
+        font-size: 0.8rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    select {
+        appearance: none;          /* Removes default browser styling */
+        -webkit-appearance: none;  /* For Safari/Chrome */
+        -moz-appearance: none;     /* For Firefox */
+        background: none;          /* Remove background, including arrow */
+        background-image: none;    /* Extra precaution */
+    }
+    
+    /* ....................................................END OF DROPDOWN SECTION */
+
+    .button {
+        padding: 0.7rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..........................................OVERFLOW SECTION     */
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        margin-top: 1rem;
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15.375rem;
+        height: 20.296rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 15.375rem;
+        height: 9.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.461rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.21rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .fas {
+        font-size: 1.2rem;
+    }
+    .icon {
+        font-size: 1.2rem
+    }
+    .px-16 {
+        font-size: 0.9rem;
+        /* font-weight: 70; */
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .fonts {
+        font-size: 1.8rem;
+    }
+    .link {
+        text-decoration: none;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+
+    /* ........................................................................................................................FOOTER SECTION */
+    #footer {
+        position: relative;
+        top: -22rem;
+        z-index: 9;
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 5rem 3rem;
+        height: 11.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+    #text {
+        font-size: 1.5rem;
+    }
+    .media {
+        width: 20.188rem;
+        height: 3.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 3.875rem;
+        height: 3.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.813rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 3rem;
+        margin-bottom: 2rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 3rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1338px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 8.75rem;
+        padding-right: 8.75rem;
+    }
+    .margin {
+        margin-left: 8.75rem;
+        margin-right: 8.75rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 4.5rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 4.5rem;
+        height: 100%;
+        /* background-color: black; */
+        /* float: left; */
+    }
+    .home-image {
+        width: 4.5rem;
+        /* height: 100%; */
+        object-fit: contain;
+    }
+
+    /* .....................................................................................................................BANNER SECTION */
+    .carousel {
+        position: relative;
+        height: 40vh;
+        /* width: 100%; */
+        padding-top: 10.375rem;
+        background-size: cover;
+        color: white;
+        border-radius: 0 0 0.625rem 0.625rem;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+        /* border: 1px solid green; */
+    }
+
+    /* .......................................................................................................................OPTIONS SECTION */
+    #options {
+        position: relative;
+        top: -22rem;
+        z-index: 9;
+        /* height: 20px; */
+        padding: 1rem;
+        background-color: #F0F0F0;
+        border-radius: 1.563rem 1.563rem 0 0;
+        border: 1px solid black;
+    }
+    #option-filter {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid green; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ....................................................DROPDOWN SECTION */
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+
+        /* ...............................DROPDOWN ICON */
+        background-image:url('image/Car-Images/arrow-1.svg');
+        background-repeat:no-repeat;
+        background-position:right 0.1rem center;
+        /* ...............................DROPDOWN ICON END */
+
+        border: none;
+        cursor: pointer;
+        width: 6.3rem;
+        font-size: 0.8rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .dropdown-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+
+        border: none;
+        cursor: pointer;
+        width: 6.5rem;
+        font-size: 0.8rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        /* justify-content: 5rem; */
+        /* background-color: #C3C3C3; */
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    select {
+        appearance: none;          /* Removes default browser styling */
+        -webkit-appearance: none;  /* For Safari/Chrome */
+        -moz-appearance: none;     /* For Firefox */
+        background: none;          /* Remove background, including arrow */
+        background-image: none;    /* Extra precaution */
+    }
+    
+    /* ....................................................END OF DROPDOWN SECTION */
+
+    .button {
+        padding: 0.7rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ............DROPDOWN SECTION
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 1.3rem 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.8rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .dropdown-btn i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1.5rem;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        margin-top: 5px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid red;
+    }
+    .dropdown-content a, option {
+        padding: 10px 14px;
+        display: block;
+        text-decoration: none;
+        color: #333;
+        cursor: pointer;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .show {
+        display: block;
+    }
+    .............................................................END OF DROPDOWN SECTION
+
+    .button {
+        padding: 1.25rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 1.1rem;
+        border-radius: 0.8rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..........................................OVERFLOW SECTION     */
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 19.375rem;
+        height: 22.796rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 19.375rem;
+        height: 11.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.061rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .icon {
+        font-size: 1.45rem
+    }
+    .px-16 {
+        font-size: 1.1rem;
+        font-weight: 70;
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .link {
+        text-decoration: none;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+
+    /* ........................................................................................................................FOOTER SECTION */
+    #footer {
+        position: relative;
+        top: -22rem;
+        z-index: 9;
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 13rem 3rem;
+        height: 11.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+    #text {
+        font-size: 1.5rem;
+    }
+    .media {
+        width: 20.188rem;
+        height: 3.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 3.875rem;
+        height: 3.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.813rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 6rem;
+        margin-bottom: 2rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 8.5rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .pad {
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+    .margin {
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+    #options {
+        top: -32rem;
+    }
+    .carousel {
+        height: 40vh;
+    }
+    .carousel-group {
+        padding: 1.5rem 23% 2rem;
+    }
+    #footer {
+        top: -32rem;
+    }
+    #socials {
+        margin: 0 28% 3rem;
+    }
+    .about-content {
+        margin: 2rem 23%;
+    }
+}
+
+
+
+
+/* REDESIGN ALL THE ICONS AND PUT THEIR STYLES ON THE STYLE SHEET */t('truetype');
     } */
     body {
         font-family: 'MyFont', sans-serif;
@@ -1609,6 +3244,7 @@
         margin: 2rem 23%;
     }
 }
+
 
 
 
