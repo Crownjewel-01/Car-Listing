@@ -1,0 +1,2016 @@
+@media screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 1.25rem;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        width: fit-content;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 3.25rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 3.25rem;
+        height: 100%;
+        background-color: black;
+        /* float: left; */
+    }
+
+    /* ..............................................................................................................FIRST DETAILS SECTION */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2rem;
+        /* border: 1px solid black; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Main carousel container (holds the background image) */
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 18.813rem;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.8s ease-in-out;
+        border-radius: 1.875rem;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* smooth fade effect */
+    }
+    /* Arrow button base style (applies to both left & right) */
+    .arrow {
+        position: absolute;
+        /* top: 50%; */
+        /* Center vertically */
+        /* transform: translateY(-50%); */
+        /* Perfect vertical centering */
+        font-size: 48px;
+        /* Size of the text character (or icon) */
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Transparent black background */
+        border: 1px solid white;
+        border: none;
+        /* padding: 10px 20px; */
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 5px;
+        user-select: none;
+    }
+    .far {
+        font-size: 3rem;
+    }
+    /* Position left arrow on the left edge */
+    .left {
+        left: 0px;
+    }
+    /* Position right arrow on the right edge */
+    .right {
+        right: 0rem;
+    }
+
+
+
+
+
+
+
+
+
+
+    .car-details {
+        margin-top: 1rem;
+        /* width: 40%; */
+        /* float: left; */
+        /* width: 48%; */
+        /* border: 1px solid green; */
+    }
+    #car-details {
+        padding-bottom: 0.7rem;
+        border-bottom: 2px solid black;
+    }
+    #car-name {
+        font-size: 1rem;
+    }
+    #car-price {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+    #car-attributes {
+        margin-top: 0.5rem;
+        /* height: 18rem; */
+        /* border: 1px solid purple; */
+    }
+    #attributes {
+        font-size: 1.2rem;
+        font-weight: bold;
+        opacity: 0.77;
+    }
+    .car-attributes {
+        margin-top: 0.3rem;
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 2rem);
+        gap: 1.5rem;
+    }
+    .attributes {
+        /* height: 2rem; */
+        display: flex;
+        align-items: center;
+        /* border: 1px solid green; */
+    }
+    .attributes i {
+        color: red;
+        font-size: 1.3rem;
+    }
+    .attributes-details {
+        width: fit-content;
+        /* border: 1px solid brown; */
+        margin-left: 0.5rem;
+    }
+    .make {
+        font-size: 0.7rem;
+    }
+    .toyota {
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+    .km  {
+        font-size: 0.65rem;
+    }
+
+    /* ................................................................................................FEATURES SECTION */
+    .features {
+        margin-top: 1rem;
+        /* display: flex;
+        justify-content: space-between; */
+        /* border: 1px solid blue; */
+    }
+    .features-details {
+        /* width: 100%; */
+        height: 10.438rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid green; */
+    }
+    .features-details h3 {
+        font-size: 1rem;
+    }
+    .comfort-details {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1.5rem);
+    }
+    .comfort-details p {
+        font-size: 0.8rem;
+    }
+    .credentials {
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        margin-top: 0.5rem;
+        width: 70%;
+        height: 11rem;
+        border-radius: 15px;
+        padding: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .grid {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .grid input {
+        width: 40%;
+    }
+    .input {
+        padding: 10px;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        font-size: 0.8rem;
+    }
+    .button {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* ...........................................................................................................CAROUSEL SECTION */
+    .carousel-group {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 1.5rem 1rem 2rem;
+        /* border: 1px solid purple; */
+        background-color: #F0F0F0;
+    }
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 13.375rem;
+        height: 18.296rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 13.375rem;
+        height: 7.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.061rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.11rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .icon {
+        font-size: 1.25rem
+    }
+    .px-16 {
+        font-size: 1rem;
+        font-weight: 70;
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .link {
+        text-decoration: none;
+    }
+    .details-button {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 1.125rem 0;
+        border-radius: 3.313rem;
+        border: 0.5px solid black;
+    }
+    .details-button:hover {
+        background-color: black;
+        color: white;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+    .view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        /* margin-top: 2rem; */
+        width: fit-content;
+        margin: 2rem auto 0;
+        /* border: 1px solid green; */
+    }
+    .view:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    /* ............................................................................................FOOTER SECTION */
+    #footer {
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 2rem 2rem;
+        height: 8.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+    }
+    #text {
+        font-size: 1rem;
+    }
+    .media {
+        width: 16.188rem;
+        height: 2.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 2.5rem;
+        height: 2.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.713rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 2rem;
+        margin-bottom: 2rem;
+        font-size: 0.7rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 1rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.5rem;
+    }   
+}
+
+@media screen and (max-width: 384px) {
+    .pad {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .details-button {
+        padding: 1rem 0;
+    }
+    #website-info {
+        text-align: center;
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+        font-size: 0.6rem;
+    }
+    /* #socials {
+        font-size: 1rem;
+        margin: 0 1rem 2rem;
+    }
+    #text {
+        font-size: 0.8rem;
+    } */
+    .media-logo {
+        width: 1.875rem;
+        height: 1.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.513rem;
+    }
+    .media {
+        width: 12.188rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    
+}
+
+@media screen and (min-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .margin {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 1.25rem;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        width: fit-content;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 3.25rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 3.25rem;
+        height: 100%;
+        background-color: black;
+        /* float: left; */
+    }
+
+    /* ..............................................................................................................FIRST DETAILS SECTION */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        /* border: 1px solid black; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Main carousel container (holds the background image) */
+    .carousel {
+        position: relative;
+        width: 53%;
+        height: 25.813rem;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.8s ease-in-out;
+        border-radius: 1.875rem;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* smooth fade effect */
+    }
+    /* Arrow button base style (applies to both left & right) */
+    .arrow {
+        position: absolute;
+        /* top: 50%; */
+        /* Center vertically */
+        /* transform: translateY(-50%); */
+        /* Perfect vertical centering */
+        font-size: 48px;
+        /* Size of the text character (or icon) */
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Transparent black background */
+        border: 1px solid white;
+        border: none;
+        /* padding: 10px 20px; */
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 5px;
+        user-select: none;
+    }
+    /* Position left arrow on the left edge */
+    .left {
+        left: 0px;
+    }
+    /* Position right arrow on the right edge */
+    .right {
+        right: 0rem;
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .car-details {
+        width: 40%;
+        /* float: left; */
+        /* width: 48%; */
+        /* border: 1px solid green; */
+    }
+    #car-details {
+        padding-bottom: 0.7rem;
+        border-bottom: 2px solid black;
+    }
+    #car-name {
+        font-size: 1rem;
+    }
+    #car-price {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+    #car-attributes {
+        margin-top: 1rem;
+        height: 22rem;
+        /* border: 1px solid purple; */
+    }
+    #attributes {
+        font-size: 1.2rem;
+        font-weight: bold;
+        opacity: 0.77;
+    }
+    .car-attributes {
+        margin-top: 0.5rem;
+        /* border: 1px solid blue; */
+        height: 20.7rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .attributes {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        /* border: 1px solid green; */
+    }
+    .attributes i {
+        color: red;
+        font-size: 1.3rem;
+    }
+    .attributes-details {
+        width: fit-content;
+        /* border: 1px solid brown; */
+        margin-left: 0.5rem;
+    }
+    .make {
+        font-size: 0.7rem;
+    }
+    .toyota {
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+    .km  {
+        font-size: 0.65rem;
+    }
+
+    /* ................................................................................................FEATURES SECTION */
+    .features {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid blue; */
+    }
+    .features-details {
+        /* width: 50%; */
+        height: 11.438rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid green; */
+    }
+    .features-details h3 {
+        font-size: 1rem;
+    }
+    .comfort-details {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 2rem);
+    }
+    .comfort-details p {
+        font-size: 0.9rem;
+    }
+    .credentials {
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+        border-radius: 15px;
+        padding: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .grid {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .grid input {
+        width: 41%;
+    }
+    .input {
+        padding: 8px;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        font-size: 0.8rem;
+    }
+    .button {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* ...........................................................................................................CAROUSEL SECTION */
+    .carousel-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding: 1.5rem 1rem;
+        margin-top: 1.5rem;
+        /* border: 1px solid purple; */
+        background-color: #F0F0F0;
+    }
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        margin-top: 0.5rem;
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15.375rem;
+        height: 20.296rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 15.375rem;
+        height: 9.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.461rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.21rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .fas {
+        font-size: 1.2rem;
+    }
+    .icon {
+        font-size: 1.2rem
+    }
+    .px-16 {
+        font-size: 0.9rem;
+        /* font-weight: 70; */
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .fonts {
+        font-size: 1.8rem;
+    }
+    .link {
+        text-decoration: none;
+    }
+    .details-button {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1.125rem 0;
+        border-radius: 3.313rem;
+        border: 0.5px solid black;
+    }
+    .details-button:hover {
+        background-color: black;
+        color: white;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+    .view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        /* margin-top: 2rem; */
+        width: fit-content;
+        /* width: fit-content; */
+        /* width: 100%; */
+        margin: 1.5rem auto 0;
+        /* margin-left: 45%; */
+        /* border: 1px solid green; */
+    }
+    .fa-arrow-right {
+        font-size: 1rem;
+    }
+    .view:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    /* ............................................................................................FOOTER SECTION */
+    #footer {
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 5rem 2rem;
+        height: 8.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+    #text {
+        font-size: 1.25rem;
+    }
+    .media {
+        width: 16.188rem;
+        height: 2.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 2.5rem;
+        height: 2.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.713rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 3rem;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 3rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.7rem;
+    }   
+}
+
+@media screen and (min-width: 991px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .margin {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* border: 1px solid black; */
+        width: fit-content;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 4rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 4rem;
+        height: 100%;
+        background-color: black;
+        /* float: left; */
+    }
+
+    /* ..............................................................................................................FIRST DETAILS SECTION */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        /* border: 1px solid black; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Main carousel container (holds the background image) */
+    .carousel {
+        position: relative;
+        width: 53%;
+        height: 38.813rem;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.8s ease-in-out;
+        border-radius: 1.875rem;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* smooth fade effect */
+    }
+    /* Arrow button base style (applies to both left & right) */
+    .arrow {
+        position: absolute;
+        /* top: 50%; */
+        /* Center vertically */
+        /* transform: translateY(-50%); */
+        /* Perfect vertical centering */
+        font-size: 48px;
+        /* Size of the text character (or icon) */
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Transparent black background */
+        border: 1px solid white;
+        border: none;
+        /* padding: 10px 20px; */
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 5px;
+        user-select: none;
+    }
+    .far {
+        font-size: 4rem;
+    }
+    /* Position left arrow on the left edge */
+    .left {
+        left: 0px;
+    }
+    /* Position right arrow on the right edge */
+    .right {
+        right: 0rem;
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .car-details {
+        width: 40%;
+        /* float: left; */
+        /* width: 48%; */
+        /* border: 1px solid green; */
+    }
+    #car-details {
+        padding-bottom: 0.7rem;
+        border-bottom: 2px solid black;
+    }
+    /* .car-price {
+        font-size: 3rem;
+        font-weight: bold;
+    } */
+    #car-attributes {
+        margin-top: 1.938rem;
+        height: 31rem;
+        /* border: 1px solid purple; */
+    }
+    #attributes {
+        font-size: 1.5rem;
+        font-weight: bold;
+        opacity: 0.77;
+    }
+    .car-attributes {
+        margin-top: 2.5rem;
+        /* border: 1px solid blue; */
+        height: 32.7rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .attributes {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .attributes i {
+        color: red;
+        font-size: 2rem;
+    }
+    .attributes-details {
+        width: fit-content;
+        /* border: 1px solid brown; */
+        margin-left: 1rem;
+    }
+    .make {
+        font-size: 1rem;
+    }
+    .toyota {
+        font-weight: bolder;
+        font-size: 1.063rem;
+    }
+    .km  {
+        font-size: 0.875rem;
+    }
+
+    /* ................................................................................................FEATURES SECTION */
+    .features {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid blue; */
+    }
+    .features-details {
+        width: 50%;
+        height: 14.438rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 1px solid green; */
+    }
+    .features-details h3 {
+        font-size: 1.375rem;
+    }
+    .comfort-details {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1.5rem);
+    }
+    .credentials {
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35%;
+        border-radius: 15px;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .grid {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .grid input {
+        width: 43%;
+    }
+    .input {
+        padding: 10px;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    .button {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* ...........................................................................................................CAROUSEL SECTION */
+    .carousel-group {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 1.5rem 2rem 2rem;
+        margin-top: 2rem;
+        /* border: 1px solid purple; */
+        background-color: #F0F0F0;
+    }
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 18.375rem;
+        height: 24.796rem;
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 18.375rem;
+        height: 11.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 8.361rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.45rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 1.1rem;
+        font-weight: 100;;
+    }
+    .first-properties {
+        width: 18rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .fas {
+        font-size: 1.5rem;
+    }
+    .icon {
+        font-size: 1.45rem
+    }
+    .px-16 {
+        font-size: 1.1rem;
+        font-weight: 70;
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 18rem;
+        /* border: 1px solid red; */
+    }
+    .fonts {
+        font-size: 2.3rem;
+    }
+    .link {
+        text-decoration: none;
+    }
+    .details-button {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1.125rem 0;
+        border-radius: 3.313rem;
+        border: 0.5px solid black;
+    }
+    .details-button:hover {
+        background-color: black;
+        color: white;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+    .view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        /* margin-top: 2rem; */
+        width: fit-content;
+        /* width: fit-content; */
+        /* width: 100%; */
+        margin: 2rem auto 0;
+        /* margin-left: 45%; */
+        /* border: 1px solid green; */
+    }
+    .view:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    /* ............................................................................................FOOTER SECTION */
+    #footer {
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 5rem 3rem;
+        height: 11.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+    #text {
+        font-size: 1.5rem;
+    }
+    .media {
+        width: 20.188rem;
+        height: 3.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 3.875rem;
+        height: 3.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.813rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 3rem;
+        margin-bottom: 2rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 3rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+    }   
+}
+
+@media screen and (min-width: 1338px) {
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: white; */
+        /* color: black; */
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        /* font-family: fonts/Inter-Regular.ttf, sans-serif; */
+    }
+    /* @font-face {
+        font-family: 'MyFont';
+        src: url('Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    } */
+    body {
+        font-family: 'MyFont', sans-serif;
+    }
+    .pad {
+        padding-left: 8.75rem;
+        padding-right: 8.75rem;
+    }
+    .margin {
+        margin-left: 8.75rem;
+        margin-right: 8.75rem;
+    }
+    .red {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .red:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+    .font {
+        font-size: 2rem;
+        font-size: bold;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* ....................................................................................................................HEADER SECTION */
+    #header {
+        display: flex;
+        /* width: 100%; */
+        height: 4.5rem;
+        border: 1px solid black;
+    }
+    #logo {
+        /* width: 4rem; */
+        width: 4.5rem;
+        height: 100%;
+        background-color: black;
+        /* float: left; */
+    }
+
+    /* ..............................................................................................................FIRST DETAILS SECTION */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        /* border: 1px solid black; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Main carousel container (holds the background image) */
+    .carousel {
+        position: relative;
+        width: 53%;
+        height: 44.813rem;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.8s ease-in-out;
+        border-radius: 1.875rem;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* smooth fade effect */
+    }
+    /* Arrow button base style (applies to both left & right) */
+    .arrow {
+        position: absolute;
+        /* top: 50%; */
+        /* Center vertically */
+        /* transform: translateY(-50%); */
+        /* Perfect vertical centering */
+        font-size: 48px;
+        /* Size of the text character (or icon) */
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Transparent black background */
+        border: 1px solid white;
+        border: none;
+        /* padding: 10px 20px; */
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 5px;
+        user-select: none;
+    }
+    .far {
+        font-size: 4rem;
+    }
+    /* Position left arrow on the left edge */
+    .left {
+        left: 0px;
+    }
+    /* Position right arrow on the right edge */
+    .right {
+        right: 0rem;
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .car-details {
+        width: 35%;
+        /* float: left; */
+        /* width: 48%; */
+        /* border: 1px solid green; */
+    }
+    #car-details {
+        padding-bottom: 0.7rem;
+        border-bottom: 2px solid black;
+    }
+    .car-price {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    #car-attributes {
+        margin-top: 1.938rem;
+        height: 37rem;
+        /* border: 1px solid purple; */
+    }
+    #attributes {
+        font-size: 1.5rem;
+        font-weight: bold;
+        opacity: 0.77;
+    }
+    .car-attributes {
+        margin-top: 2.5rem;
+        /* border: 1px solid blue; */
+        height: 32.7rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .attributes {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .attributes i {
+        color: red;
+        font-size: 2rem;
+    }
+    .attributes-details {
+        width: fit-content;
+        /* border: 1px solid brown; */
+        margin-left: 1rem;
+    }
+    .make {
+        font-size: 1rem;
+    }
+    .toyota {
+        font-weight: bolder;
+        font-size: 1.063rem;
+    }
+    .km  {
+        font-size: 0.875rem;
+    }
+
+    /* ................................................................................................FEATURES SECTION */
+    .features {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid blue; */
+    }
+    .features-details {
+        width: 50%;
+        height: 14.438rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 1px solid green; */
+    }
+    .features-details h3 {
+        font-size: 1.375rem;
+    }
+    .comfort-details {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1.5rem);
+    }
+    .credentials {
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35%;
+        border-radius: 15px;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .grid {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .grid input {
+        width: 43%;
+    }
+    .input {
+        padding: 10px;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+    .button {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* ...........................................................................................................CAROUSEL SECTION */
+    .carousel-group {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 1.5rem 8.75rem 2rem;
+        margin-top: 2rem;
+        /* border: 1px solid purple; */
+        background-color: #F0F0F0;
+    }
+    .overflow {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* Internet Explorer and Edge */
+        /* width: 100%; */
+        /* height: 20rem; */
+        /* border: 1px solid black; */
+        /* background-color: #E7E7E7; */
+    }
+    .overflow::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari, Opera */
+    }
+    /* ...................................CAR PROFILE SECTION */
+    .car-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 19.375rem;
+        /* height: 28.296rem; */
+        margin-right: 1.563rem;
+        /* border: 1px solid green; */
+    }
+    .car-image {
+        width: 19.375rem;
+        height: 11.875rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 1.688rem;
+        /* border: 1px solid blue; */
+    }
+    .car-model {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        padding: 0 0.375rem;
+        height: 7.061rem;
+        /* border: 1px solid purple; */
+    }
+    .car-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;            /* Hides overflowed text */
+        text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */ 
+    }
+    .core {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .first-properties {
+        width: 14.713rem;
+        display: flex;
+        justify-content: space-between;
+        /* width: 12rem; */
+        /* border: 1px solid red; */
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 1.249rem;
+        width: 50%;
+        /* border: 2px solid black; */
+    }
+    .icon {
+        font-size: 1.45rem
+    }
+    .px-16 {
+        font-size: 1.1rem;
+        font-weight: 70;
+        padding-left: 0.3rem;
+    }
+    .second-properties {
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 0.5rem; */
+        /* width: 12rem; */
+        width: 14.713rem;
+        /* border: 1px solid red; */
+    }
+    .link {
+        text-decoration: none;
+    }
+    .details-button {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1.125rem 0;
+        border-radius: 3.313rem;
+        border: 0.5px solid black;
+    }
+    .details-button:hover {
+        background-color: black;
+        color: white;
+    }
+    /* ..........................CAR PROFILE SECTION END */
+    .view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        /* margin-top: 2rem; */
+        width: fit-content;
+        /* width: fit-content; */
+        /* width: 100%; */
+        margin: 2rem auto 0;
+        /* margin-left: 45%; */
+        /* border: 1px solid green; */
+    }
+    .view:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    /* ............................................................................................FOOTER SECTION */
+    #footer {
+        background-color: black;
+        color: white;
+        /* margin-top: 3rem; */
+        padding-top: 3rem;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+    #socials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.688rem 0;
+        margin: 0 13rem 3rem;
+        height: 11.562rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+    #text {
+        font-size: 1.5rem;
+    }
+    .media {
+        width: 20.188rem;
+        height: 3.875rem;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+    }
+    .social-media {
+        width: 3.875rem;
+        height: 3.875rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-logo {
+        width: 2.875rem;
+        height: 2.875rem;
+        object-fit: cover;
+    }
+    .media-name {
+        font-size: 0.813rem;
+    }
+    /* .arrow-up {
+        text-align: center;
+    } */
+    #website-info {
+        text-align: center;
+        margin: 0 6rem;
+        margin-bottom: 2rem;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid yellow; */
+        margin: 2rem 8.5rem;
+    }
+    .company-info {
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid greenyellow; */
+    }
+    .company-info-section {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .company-info-details {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    #copywrite {
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .pad {
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+    .margin {
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+    .arrow {
+        color: white;
+    }
+    .far {
+        font-size: 5rem;
+        opacity: 60%;
+    }
+    .carousel-group {
+        padding: 1.5rem 23% 2rem;
+    }
+    #socials {
+        margin: 0 28% 3rem;
+    }
+    .about-content {
+        margin: 2rem 23%;
+    }
+}
+
+
+
+
+/* REDESIGN ALL THE ICONS AND PUT THEIR STYLES ON THE STYLE SHEET */

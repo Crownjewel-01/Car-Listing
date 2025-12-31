@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="details.css">
+    <script src="https://kit.fontawesome.com/e160b1f034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- .........................................................................................................HEADER SECTION -->
+    <header id="header" class="pad">
+        <a id="logo" href="index.html"></a>
+        <!-- <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <!-- .........................................................................................................CAR-DETAILS SECTION -->
+    <div class="container margin">
+        <!-- ......................................CAR-IMAGE SECTION -->
+        <div id="carousel" class="image-carousel carousel">
+            <button class="arrow left" onclick="prevSlide()"><i class="far fa-arrow-alt-circle-left"></i></button>
+            <button class="arrow right" onclick="nextSlide()"><i class="far fa-arrow-alt-circle-right"></i></button>
+        </div>
+        <div class="car-details">
+            <div id="car-details">
+                <h2 class="font" id="car-name">Foreign Used 2021 Toyota highlander</h2>
+                <h1 id="car-price">$7,000</h1>
+            </div>
+            <!-- ..................................CAR-ATTRIBUTES SECTION -->
+            <div id="car-attributes">
+                <p id="attributes">Attributes</p>
+                <div class="car-attributes">
+                    <div class="attributes">
+                        <i class='fas fa-industry'></i>
+                        <div class="attributes-details">
+                            <p class="make brand">Brand</p>
+                            <p class="toyota car-brand">Toyota</p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='fas fa-project-diagram'></i>
+                        <div class="attributes-details">
+                            <p class="make">Model</p>
+                            <p class="toyota" id="car-model">Highlander</p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='fas fa-car-side'></i>
+                        <div class="attributes-details">
+                            <p class="make">Body Type</p>
+                            <p class="toyota body-type">SUV</p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='fas fa-project-diagram'></i>
+                        <div class="attributes-details">
+                            <p class="make">Transmissiom</p>
+                            <p class="toyota car-transmission">Automatic</p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='fas fa-gas-pump'></i>
+                        <div class="attributes-details">
+                            <p class="make">Fuel Type</p>
+                            <p class="toyota fuel-type">Petrol</p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='fas fa-brush'></i>
+                        <div class="attributes-details">
+                            <p class="make">Colour</p>
+                            <p class="toyota car-colour">Silver</p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='fas fa-tachometer-alt'></i>
+                        <div class="attributes-details">
+                            <p class="make">Mileage</p>
+                            <p class="toyota car-milieage">43193 <span id="km">km</span></p>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <i class='	far fa-calendar-alt'></i>
+                        <div class="attributes-details">
+                            <p class="make">Year</p>
+                            <p class="toyota car-year">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ...........................................................................................................FEATURES SECTION -->
+    <div class="features margin">
+        <div class="features-details">
+            <h2 class="font">Other Features</h2>
+            <div>
+                <h3>Comfort</h3>
+                <div class="comfort-details">
+                    <p>Engine start button</p>
+                    <p>Seat heating</p>
+                    <p>Sunroof (Panoramic)</p>
+                    <p>Electric window lift</p>
+                </div>
+            </div>
+            <div>
+                <h3>Safety</h3>
+                <div class="comfort-details">
+                    <p>Airbags</p>
+                    <p>Child seats - ISOFix Mount</p>
+                    <p>Emergency Breaking</p>
+                    <p>Collision warning</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ............................................CREDENTIALS SECTION -->
+        <div class="credentials">
+            <div class="grid">
+                <input type="text" placeholder="First Name" class="input">
+                <input type="text" placeholder="Last Name" class="input">
+            </div>
+            <div class="grid">
+                <input type="number" placeholder="Phone Number" class="input">
+                <input type="text" placeholder="City" class="input">
+            </div>
+            <input type="text" placeholder="Email" class="input">
+            <button class="red button input">Request for a test drive</button>
+        </div>
+    </div>
+    <!-- ...........................................................................................................CAROUSEL SECTION -->
+    <div class="carousel-group">
+        <h2 class="font">Similar Cars</h2>
+        <div class="overflow">
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                            <p class="details-button">DETAILS</p>
+                        </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+            <a class="car-profile" href="details.html">
+                <img src="./image/opel-5190050_640.jpg" alt="" class="car-image">
+                <div class="car-model">
+                    <p class="car-name">2025 LAMBORGHINI URUS</p>
+                    <p class="core"><span class="engine-displacement">5.2L</span> <span class="engine">V10 engine</span>, <span
+                            class="horse-power">631hp</span> @ <span class="rpm">8,000rpm</span> </p>
+                    <div class="first-properties">
+                        <div class="center">
+                            <i class='fas fa-map-marker-alt icon'></i> <span class="car-location px-16">???</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel px-16">Petrol</span>
+                        </div>
+                    </div>
+                    <div class="second-properties">
+                        <div class="center">
+                            <i class='fas fa-car'></i> <span class="body-type px-16">SUV</span>
+                        </div>
+                        <div class="center">
+                            <i class='fas fa-gas-pump'></i> <span class="fuel-tank px-16">1.5 litres</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fonts car-price">$500,000</h2>
+                <!-- <a class="link" href="details.html">
+                                        <p class="details-button">DETAILS</p>
+                                    </a> -->
+            </a>
+        </div>
+        <a href="more-options.html" class="view">
+            <p>View more <i class='fas fa-arrow-right' style='margin-left: 1rem'></i></p>
+        </a>
+    </div>
+    <!-- ...............................................................................................................FOOTER SECTION -->
+    <footer id="footer">
+        <div id="socials"  class="pad">
+            <p>Follow us on Social Media <br><br><span id="text">All the latest news for you</span></p>
+            <div class="media">
+                <div class="social-media">
+                    <img src="image/whatsapp black.webp" alt="" class="media-logo">
+                    <p class="media-name">Whatsapp</p>
+                </div>
+                <div class="social-media">
+                    <img src="image/whatsapp black.webp" alt="" class="media-logo">
+                    <p class="media-name">Whatsapp</p>
+                </div>
+                <div class="social-media">
+                    <img src="image/whatsapp black.webp" alt="" class="media-logo">
+                    <p class="media-name">Whatsapp</p>
+                </div>
+                <div class="social-media">
+                    <img src="image/whatsapp black.webp" alt="" class="media-logo">
+                    <p class="media-name">Whatsapp</p>
+                </div>
+            </div>
+        </div>
+        <!-- <i class="fas fa-arrow-circle-up">snvs</i> -->
+        <p id="website-info"  class="pad">This website is your trusted destination for affordable vehicles, expert service, and a smooth, customer-focused car-buying experience. With great deals, flexible financing, and friendly support, we’re here to help you every step of the way.</p><hr>
+        <div class="about-content">
+            <div class="company-info">
+                <p class="company-info-section">About Us</p>
+                <div class="company-info-details">
+                    <p>Company</p>
+                    <p>Customer Reviews</p>
+                </div>
+            </div>
+            <div class="company-info">
+                <p class="company-info-section">Help</p>
+                <div class="company-info-details">
+                    <p>FAQs</p>
+                    <p>Video-help</p>
+                </div>
+            </div>
+            <div class="company-info">
+                <p class="company-info-section">Location</p>
+                <div class="company-info-details">
+                    <p>144, Wale-Ariwole, Isolo <br>Lagos, Nigeria</p>
+                    <!-- <p>Customer Reviews</p> -->
+                </div>
+            </div>
+            <div class="company-info">
+                <p class="company-info-section">Contact Us</p>
+                <div class="company-info-details">
+                    <p>+234 810 623 5974</p>
+                    <p>dealer@gmail.com</p>
+                </div>
+            </div>
+        </div><hr>
+        <p id="copywrite">Copywrite &#169 <script>document.write(new Date().getFullYear())</script> All rights reserved</p>
+    </footer>
+    <script src="details.js"></script>
+    <!-- <script src="carAPI.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manual Background Carousel</title>
+    <style>
+        /* Make the entire body and HTML fill the screen */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Main carousel container (holds the background image) */
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.8s ease-in-out;
+            /* smooth fade effect */
+        }
+
+        /* Arrow button base style (applies to both left & right) */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            /* Center vertically */
+            transform: translateY(-50%);
+            /* Perfect vertical centering */
+            font-size: 48px;
+            /* Size of the text character (or icon) */
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Transparent black background */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            z-index: 2;
+            border-radius: 5px;
+            user-select: none;
+        }
+
+        /* Hover effect for better UX */
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Position left arrow on the left edge */
+        .left {
+            left: 20px;
+        }
+
+        /* Position right arrow on the right edge */
+        .right {
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    (Main carousel container: only background image will change)
+    <div id="carousel" class="carousel"></div>
+
+    (Left and Right arrows)
+    (These currently use Unicode arrows: ← (&#10094;) and → (&#10095;))
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    <script>
+        // Array of background image URLs
+        const images = [
+            'https://picsum.photos/id/1005/1920/1080',
+            'https://picsum.photos/id/1003/1920/1080',
+            'https://picsum.photos/id/1011/1920/1080',
+            'https://picsum.photos/id/1016/1920/1080'
+        ];
+
+        let index = 0; // Track current image index
+        const carousel = document.getElementById("carousel");
+
+        // Function to show image at given index
+        function showSlide(i) {
+            carousel.style.backgroundImage = `url(${images[i]})`;
+        }
+
+        // Show next image
+        function nextSlide() {
+            index = (index + 1) % images.length;
+            showSlide(index);
+        }
+
+        // Show previous image
+        function prevSlide() {
+            index = (index - 1 + images.length) % images.length;
+            showSlide(index);
+        }
+
+        // Show the first image when page loads
+        showSlide(index);
+    </script>
+
+</body>
+
+</html>
+
+
+</html> -->
