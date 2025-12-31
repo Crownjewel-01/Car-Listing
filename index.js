@@ -66,7 +66,7 @@ setInterval(changeBackground, 8000); // Change every 8 seconds
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< RANDOM DISPLAY OF CARS FROM API
 
-import { getAllCars } from "../carAPI.js";  // ...................................This works for all endpoints in the possible endpoints in the page
+// import { getAllCars } from "../carAPI.js";  // ...................................This works for all endpoints in the possible endpoints in the page
 
 async function showCars(limit = 10) {
     //  Get all cars from the backend
@@ -138,3 +138,4 @@ async function showCars(limit = 10) {
 }
 
 window.onload = () => showCars(15); // change 15 to how many you want displayed
+
