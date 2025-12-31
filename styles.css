@@ -53,8 +53,13 @@
         /* width: 4rem; */
         width: 3.25rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 3.25rem;
+        height: 100%;
+        object-fit: contain;
     }
 
     /* .....................................................................................................................BANNER SECTION */
@@ -94,7 +99,7 @@
         padding: 1.5rem;
         background-color: #E7E7E7;
         border-radius: 1.875rem;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     #range {
         position: relative;
@@ -558,8 +563,13 @@
         /* width: 4rem; */
         width: 3.25rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 3.25rem;
+        height: 100%;
+        object-fit: contain;
     }
 
     /* .....................................................................................................................BANNER SECTION */
@@ -1013,8 +1023,13 @@
         /* width: 4rem; */
         width: 4rem;
         height: 100%;
-        background-color: black;
+        /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 4rem;
+        height: 100%;
+        object-fit: contain;
     }
 
     /* .....................................................................................................................BANNER SECTION */
@@ -1465,6 +1480,11 @@
         /* height: 100%; */
         /* background-color: black; */
         /* float: left; */
+    }
+    .home-image {
+        width: 4.5rem;
+        /* height: 100%; */
+        object-fit: contain;
     }
 
     /* .....................................................................................................................BANNER SECTION */
